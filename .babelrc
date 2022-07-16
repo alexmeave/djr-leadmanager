@@ -1,0 +1,6 @@
+// 2.1.1 Creamos archivo de configuración de babel
+{
+        "presets": ["@babel/preset-env","@babel/preset-react"],
+        "plugins": ["transform-class-properties"]
+}
+
