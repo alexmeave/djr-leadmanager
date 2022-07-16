@@ -2,8 +2,6 @@
 #### (proyecto de testeo de Django + React)
 
 ## Instalación
-
-
 ### 1 Instalar python3 y pip3
 
 ```bash
@@ -11,13 +9,18 @@ sudo apt install python3 pip3
 mkdir djr-leadmanager
 cd djr-leadmanager/
 ```
+### 2 Clonar este repositorio
 
-### 2 Crear ambiente de trabajo
+```bash
+git clone https://github.com/alexmeave/djr-leadmanager.git
+```
+
+### 3 Crear ambiente de trabajo
 ```bash
 pip3 install pipenv
 pipenv shell
 ```
-#### 2.1 Cambiar prompt de pipenv shell *opcional*
+#### 3.1 Cambiar prompt de pipenv shell *opcional*
 
 > El prompt por default de `pipenv shell` es el nombre del directorio
 > sobre el que estamos, para cambiarlo hay que editar el archivo
@@ -39,12 +42,21 @@ Modificar líneas 64 y 65:
 		PS1="(djr-leadmanager) ${PS1-}"
 ```
 
-### 1.3 Instalamos dependencias dentro del ambiente de trabajo
+### 4 Instalamos dependencias dentro del ambiente de trabajo
 ```bash
 pipenv install
 npm install
 ```
 
+### 5 Iniciar el server
+```bash
+cd leadmanager
+python manage.py runserver
+```
+
+Abrir en el navegador http://127.0.0.1:8000/
+
+Registrar un usuario y LISTO!!!
 
 
 > Written with [StackEdit](https://stackedit.io/).
